@@ -195,7 +195,7 @@ class HeroesViewController: UIViewController {
         heroCollectionView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20).isActive = true
         heroCollectionView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -20).isActive = true
         heroCollectionView.topAnchor.constraint(equalTo: roleCollectionView.bottomAnchor, constant: 5).isActive = true
-        heroCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        heroCollectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         
         loading.translatesAutoresizingMaskIntoConstraints = false
         loading.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
