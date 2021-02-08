@@ -296,7 +296,7 @@ extension HeroesViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (self.lastContentOffset > scrollView.contentOffset.y || scrollView.contentOffset.y <= 0) {
+        if ((self.lastContentOffset > scrollView.contentOffset.y || scrollView.contentOffset.y <= 0) && scrollView.contentOffset.y + scrollView.frame.height < scrollView.contentSize.height) {
             roleCollectionView?.isHidden = false
             collectionView0HeightConstraint?.isActive = false
             collectionView50HeightConstraint?.isActive = true
